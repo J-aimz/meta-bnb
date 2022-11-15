@@ -8,7 +8,7 @@ import { Navbar, NavLinkCon, LinkCon, NavButton } from './Nav.styled'
 // imgs
 import Logo from '../assets/icons/meta-logo.svg'
 
-function Nav() {
+function Nav(props) {
   return (
     <Navbar>
         <img src={Logo} alt="" />
@@ -30,7 +30,7 @@ function Nav() {
             </LinkCon>
         </NavLinkCon>
     
-        <NavButton>Connet wallet</NavButton>
+        <NavButton onClick={props.setModal}>Connet wallet</NavButton>
 
         
     </Navbar>

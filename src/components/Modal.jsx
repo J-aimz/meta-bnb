@@ -3,40 +3,65 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import CloseIcon from '@mui/icons-material/Close';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+import {ModalCon, ModalHead, ModalContent, ModalItem, Line, Small} from './Modal.styled'
+
+// img
+import metamask from '../assets/icons/metamask.png'
+import walletConnect from '../assets/icons/walletConnect.png'
+
+
+
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 600,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
+  borderRadius : '10px',
   boxShadow: 24,
-  p: 4,
+  paddingBottom : '1rem'
 };
 
-export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+export default function BasicModal(props) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
-        open={open}
-        onClose={handleClose}
+        open={props.openModal}
+        onClose={props.closeModal}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          <ModalCon> 
+            <ModalHead>
+              <h5>Connect Wallet</h5>
+              <CloseIcon onClick={props.closeModal} />
+            </ModalHead>
+            <Line />
+            <ModalContent>
+            <Small>Choose your preferred wallet:</Small>
+              <ModalItem onClick={props.closeModal}>
+                <div>
+                  <img src={metamask} alt="logo_metamask" />
+                  <span>Metamask</span>
+                </div>
+                <ArrowForwardIosIcon />
+              </ModalItem>
+              <ModalItem onClick={props.closeModal}>
+                <div>
+                  <img src={walletConnect} alt="logo_wallet_connect" />
+                  <span>Walletconnect</span>
+                </div>
+                <ArrowForwardIosIcon />
+              </ModalItem>
+            </ModalContent>
+          </ModalCon>
         </Box>
       </Modal>
     </div>

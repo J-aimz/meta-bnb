@@ -11,15 +11,24 @@ import styled from 'styled-components'
 import Nav from './components/Nav'
 import Card from './components/Card'
 import Footer from './components/Footer'
+import Modal from './components/Modal'
 
 
 function App() {
   const [count, setCount] = useState(0)
+  const [openModal, setOpenModal] = useState(false)
+
+  function handleModal() {
+    setOpenModal(prev => !prev)
+  }
+
+  console.log(openModal)
 
   return (
     <div className="App">
+      <Modal openModal ={openModal} closeModal ={handleModal} />
       <Container>
-        <Nav />
+        <Nav setModal ={handleModal} />
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/places-to-stay' element={<PlacesToStay />} />
