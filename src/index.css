@@ -1,0 +1,33 @@
+html,
+body,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #434343;
+}
+
+body{
+    /* width: 100%; */
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 78.4px;
+}
+
+
+h2{
+    font-size: 2.75rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.icons{
+    color: #fff !important;
+}
+
