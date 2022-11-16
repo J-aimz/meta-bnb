@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-// const HeroBody = styled.div`
-//     /* height: 100vh;
-//     position: relative; */
-// `
-
 const HeroCon = styled.div`
     display: flex;
     justify-content: center;
@@ -18,6 +13,33 @@ const HeroCon = styled.div`
         }
     }
 
+    @media (min-width : 481px) {
+        margin-top: 1em;
+        gap: 1rem;
+
+        div{
+
+            div{
+                width: 100%;
+            }
+        }
+    }
+
+    @media (min-width:1020px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+
+        div{
+
+            div{
+                width: 85%;
+            }
+        }
+    }
+
 `
 
 const AccentHeader = styled.span`
@@ -28,6 +50,17 @@ const Subtext = styled.p`
     margin-top: 2em;
     font-size: 24px;
     line-height: 35px;
+
+    @media (min-width : 481px) {
+        margin-top: .2em;
+        line-height: 25px;
+        font-size: 18px;
+    }
+    @media (min-width: 1020px) {
+        margin-top: 2em;
+        font-size: 24px;
+        line-height: 35px;
+    }
 `
 
 const SearchBarCon = styled.div`
@@ -83,12 +116,51 @@ const ImgCon = styled.div`
         }
     }
 
+    @media(min-width : 481px) {
+     
+        margin-right: 0;
+
+        div{
+            img{
+                width: 9rem;
+            }
+        }
+    }
+
+    @media (min-width: 1020px) {
+        display: flex;
+        gap: .5rem;
+        margin-right: 7rem;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+
+            img{
+                width: 20rem;
+            }
+        }
+    }
+
 
 `
 
 const Gaping = styled.span`
     height: 11rem;
     display: block;
+
+    @media(min-width : 481) {
+        height: 5rem ;
+        border: 1px solid red;
+    }
+
+    @media (min-width) {
+        height: 11rem;
+        display: block;
+    }
 `
 
 export {HeroCon, AccentHeader, Subtext, SearchBarCon, SearchInput, SearchBtn, ImgCon, Gaping}

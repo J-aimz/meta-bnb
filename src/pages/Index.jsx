@@ -48,7 +48,7 @@ function Index() {
           </AffiliateCon>
       </Header>
       <SectionTwo>
-        <h3>Inspiration for uour next adventure</h3>
+        <h2>Inspiration for uour next adventure</h2>
         <ProductListing imgs ={productImgs} />
       </SectionTwo>
       <SectionThree>

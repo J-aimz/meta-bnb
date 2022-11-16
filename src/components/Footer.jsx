@@ -25,35 +25,35 @@ function Footer() {
         </LogoAndSocails>
         <FooterLinksCon>
 
-        <div>
-          <span>Community</span>
+          <div>
+            <span>Community</span>
 
-          <div>
-            <FooterLinks>NFT</FooterLinks>
-            <FooterLinks>Tokens</FooterLinks>
-            <FooterLinks>Landlords</FooterLinks>
-            <FooterLinks>Discord</FooterLinks>
+            <div>
+              <FooterLinks>NFT</FooterLinks>
+              <FooterLinks>Tokens</FooterLinks>
+              <FooterLinks>Landlords</FooterLinks>
+              <FooterLinks>Discord</FooterLinks>
+            </div>
           </div>
-        </div>
-        <div>
-          <span>Places</span>
           <div>
-            <FooterLinks>Castle</FooterLinks>
-            <FooterLinks>Farms</FooterLinks>
-            <FooterLinks>Beach</FooterLinks>
-            <FooterLinks>Learn More</FooterLinks>
-          </div>
+            <span>Places</span>
+            <div>
+              <FooterLinks>Castle</FooterLinks>
+              <FooterLinks>Farms</FooterLinks>
+              <FooterLinks>Beach</FooterLinks>
+              <FooterLinks>Learn More</FooterLinks>
+            </div>
 
-        </div>
-        <div>
-          <span>About us</span>
-          <div>
-            <FooterLinks>Road map</FooterLinks>
-            <FooterLinks>Creators</FooterLinks>
-            <FooterLinks>Career</FooterLinks>
-            <FooterLinks>Contact us</FooterLinks>
           </div>
-        </div>
+          <div>
+            <span>About us</span>
+            <div>
+              <FooterLinks>Road map</FooterLinks>
+              <FooterLinks>Creators</FooterLinks>
+              <FooterLinks>Career</FooterLinks>
+              <FooterLinks>Contact us</FooterLinks>
+            </div>
+          </div>
         </FooterLinksCon>
         <CopyRight>&copy; 2022 Metabnb</CopyRight>
 

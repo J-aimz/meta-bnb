@@ -1,17 +1,39 @@
 import styled from 'styled-components'
 
 const Navbar = styled.nav`
-    /* background-color   : red; */
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@media (min-width : 300px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    @media (min-width : 481px) {
+        padding: 1em;
+        padding-top: 2rem;
+
+        img{
+            width: 20%;
+        }
+    }
+
+    @media (min-width : 1020px) {
+        padding: 1em;
+        padding-top: 2rem;
+       
+    }
+     
+    
 `
 const NavLinkCon = styled.div`
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+
+
 
 `
 const LinkCon = styled.span`

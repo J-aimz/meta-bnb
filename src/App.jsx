@@ -9,7 +9,6 @@ import styled from 'styled-components'
 
 // components
 import Nav from './components/Nav'
-import Card from './components/Card'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
 
@@ -32,7 +31,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/places-to-stay' element={<PlacesToStay />} />
-          <Route path='/card' element={<Card />} />
 
         </Routes>
         <Footer />
@@ -44,8 +42,16 @@ function App() {
 }
 
 const Container = styled.div`
-  max-width: 80%;
   margin: 0 auto;
+
+  @media screen and (min-width : 481px) {
+    max-width: 90%;
+  }
+
+   
+  @media screen and (min-width : 1025px) {
+    max-width: 80%;
+  }
 `
 
 export default App

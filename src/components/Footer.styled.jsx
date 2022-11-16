@@ -10,7 +10,6 @@ const Foot = styled.footer`
 
 const FooterCon = styled.div`
     display: grid;
-    grid-template-columns: 1fr 3fr;
 
   
 
@@ -18,6 +17,28 @@ const FooterCon = styled.div`
         color: #fff;
         font-weight: bold;
         margin-bottom: 1.5rem;
+
+    }
+
+    @media (min-width:300px) {
+        grid-template-columns: 1fr;
+        
+    }
+
+    @media (min-width: 481px) {
+        grid-template-columns: 1fr;
+        
+    }
+
+    @media (min-width: 1020px) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        span{
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
 
     }
 
@@ -50,6 +71,23 @@ const SocailsCon = styled.div`
         color: #fff !important;
     }
 
+    @media (min-width: 481px) {
+        margin-top: 2em;
+    }
+
+    @media (min-width: 1020px) {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: left;
+        align-items: center;
+        gap: 1.5rem !important;
+        color: #fff !important;
+
+        & > *{
+            color: #fff !important;
+        }
+    }
+
 `
 
 const FooterLinksCon = styled.div`
@@ -63,6 +101,10 @@ const FooterLinksCon = styled.div`
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    @media (min-width: 481px) {
+        margin-top: 3em;
     }
 `
 
